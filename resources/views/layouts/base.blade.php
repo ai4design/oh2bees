@@ -20,7 +20,7 @@
             }
         }
     @endphp
-    <title>{{ $name }}{{ $title ?? 'Coolify' }}</title>
+    <title>{{ $name }}{{ $title ?? 'Oh2Bees' }}</title>
     @env('local')
     <link rel="icon" href="{{ asset('favicon-dev.png') }}" type="image/x-icon" />
 @else
@@ -33,7 +33,7 @@
             display: none !important;
         }
     </style>
-    @if (config('app.name') == 'Coolify Cloud')
+    @if (config('app.name') == 'Oh2Bees Cloud')
         <script defer data-domain="app.coolify.io" src="https://analytics.coollabs.io/js/plausible.js"></script>
     @endif
     @auth

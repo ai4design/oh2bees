@@ -1,6 +1,6 @@
 <div>
     <x-slot:title>
-        Command Center | Coolify
+        Command Center | Oh2Bees
     </x-slot>
     <h1>Command Center</h1>
     <div class="subtitle">Execute commands on your servers without leaving the browser.</div>

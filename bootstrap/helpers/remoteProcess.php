@@ -1,7 +1,7 @@
 <?php
 
-use App\Actions\CoolifyTask\PrepareCoolifyTask;
-use App\Data\CoolifyTaskArgs;
+use App\Actions\Oh2BeesTask\PrepareOh2BeesTask;
+use App\Data\Oh2BeesTaskArgs;
 use App\Enums\ActivityTypes;
 use App\Models\Application;
 use App\Models\ApplicationDeploymentQueue;
@@ -43,8 +43,8 @@ function remote_process(
         }
     }
 
-    return resolve(PrepareCoolifyTask::class, [
-        'remoteProcessArgs' => new CoolifyTaskArgs(
+    return resolve(PrepareOh2BeesTask::class, [
+        'remoteProcessArgs' => new Oh2BeesTaskArgs(
             server_uuid: $server->uuid,
             command: <<<EOT
                 {$command_string}

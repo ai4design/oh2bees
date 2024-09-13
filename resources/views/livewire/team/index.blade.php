@@ -1,6 +1,6 @@
 <div>
     <x-slot:title>
-        Teams | Coolify
+        Teams | Oh2Bees
     </x-slot>
     <x-team.navbar />
 

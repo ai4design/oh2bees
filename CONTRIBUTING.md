@@ -61,9 +61,9 @@ After installing Docker (or Orbstack) and Spin, verify the installation:
    You should see version information for both Docker and Spin.
 
 
-## 3. Fork the Coolify repository and setup your local repository
+## 3. Fork the Oh2Bees repository and setup your local repository
 
-1. Fork the [Coolify](https://github.com/coollabsio/coolify) repository to your GitHub account.
+1. Fork the [Oh2Bees](https://github.com/coollabsio/coolify) repository to your GitHub account.
 
 2. Install a code editor on your machine (below are some popular choices, choose one):
 
@@ -77,19 +77,19 @@ After installing Docker (or Orbstack) and Spin, verify the installation:
      - macOS/Linux: Download and install from [https://zed.dev/download](https://zed.dev/download)
      - Windows: Not available yet
 
-3. Clone the Coolify Repository from your fork to your local machine
+3. Clone the Oh2Bees Repository from your fork to your local machine
    - Use `git clone` in the command line
    - Use GitHub Desktop (recommended):
      - Download and install from [https://desktop.github.com/](https://desktop.github.com/)
      - Open GitHub Desktop and login with your GitHub account
-     - Click on `File` -> `Clone Repository` select `github.com` as the repository location, then select your forked Coolify repository, choose the local path and then click `Clone`
+     - Click on `File` -> `Clone Repository` select `github.com` as the repository location, then select your forked Oh2Bees repository, choose the local path and then click `Clone`
 
-4. Open the cloned Coolify Repository in your chosen code editor.
+4. Open the cloned Oh2Bees Repository in your chosen code editor.
 
 
 ## 4. Set up Environment Variables
 
-1. In the Code Editor, locate the `.env.development.example` file in the root directory of your local Coolify repository.
+1. In the Code Editor, locate the `.env.development.example` file in the root directory of your local Oh2Bees repository.
 
 2. Duplicate the `.env.development.example` file and rename the copy to `.env`.
 
@@ -100,9 +100,9 @@ After installing Docker (or Orbstack) and Spin, verify the installation:
 5. Save the changes to your `.env` file.
 
 
-## 5. Start Coolify
+## 5. Start Oh2Bees
 
-1. Open a terminal in the local Coolify directory.
+1. Open a terminal in the local Oh2Bees directory.
 
 2. Run the following command in the terminal (leave that terminal open):
    ```
@@ -120,7 +120,7 @@ Note: If you change environment variables afterwards or anything seems broken, p
 
 ## 6. Start Development
 
-1. Access your Coolify instance:
+1. Access your Oh2Bees instance:
    - URL: `http://localhost:8000`
    - Login: `test@example.com`
    - Password: `password`
@@ -138,7 +138,7 @@ Note: If you change environment variables afterwards or anything seems broken, p
 
 ## 7. Development Notes
 
-When working on Coolify, keep the following in mind:
+When working on Oh2Bees, keep the following in mind:
 
 1. **Database Migrations**: After switching branches or making changes to the database structure, always run migrations:
    ```bash
@@ -157,7 +157,7 @@ Remember, forgetting to migrate the database can cause problems, so make it a ha
 
 ## 8. Contributing a New Service
 
-To add a new service to Coolify, please refer to our documentation:
+To add a new service to Oh2Bees, please refer to our documentation:
 [Adding a New Service](https://coolify.io/docs/knowledge-base/add-a-service)
 
 
@@ -168,7 +168,7 @@ To add a new service to Coolify, please refer to our documentation:
    - Push the changes to your GitHub account.
 
 2. Creating the Pull Request (PR):
-   - Navigate to the main Coolify repository on GitHub.
+   - Navigate to the main Oh2Bees repository on GitHub.
    - Click the "Pull requests" tab.
    - Click the green "New pull request" button.
    - Choose your fork and branch as the compare branch.
@@ -180,7 +180,7 @@ To add a new service to Coolify, please refer to our documentation:
    - Reference any related issues by using keywords like "Fixes #123" or "Closes #456".
 
 4. Important note:
-   Always set the base branch for your PR to the `next` branch of the Coolify repository, not the `main` branch.
+   Always set the base branch for your PR to the `next` branch of the Oh2Bees repository, not the `main` branch.
 
 5. Submit your PR:
    - Review your changes one last time.

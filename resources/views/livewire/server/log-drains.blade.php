@@ -1,6 +1,6 @@
 <div>
     <x-slot:title>
-        {{ data_get_str($server, 'name')->limit(10) }} > Server LogDrains | Coolify
+        {{ data_get_str($server, 'name')->limit(10) }} > Server LogDrains | Oh2Bees
     </x-slot>
     <x-server.navbar :server="$server" :parameters="$parameters" />
     @if ($server->isFunctional())

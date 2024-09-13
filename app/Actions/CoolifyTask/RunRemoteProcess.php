@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Actions\CoolifyTask;
+namespace App\Actions\Oh2BeesTask;
 
 use App\Enums\ActivityTypes;
 use App\Enums\ProcessStatus;

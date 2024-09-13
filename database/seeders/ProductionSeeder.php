@@ -67,7 +67,7 @@ class ProductionSeeder extends Seeder
 
         if (! isCloud() && config('coolify.is_windows_docker_desktop') == false) {
             echo "Checking localhost key.\n";
-            // Save SSH Keys for the Coolify Host
+            // Save SSH Keys for the Oh2Bees Host
             $coolify_key_name = 'id.root@host.docker.internal';
             $coolify_key = Storage::disk('ssh-keys')->get("{$coolify_key_name}");
 
@@ -79,22 +79,22 @@ class ProductionSeeder extends Seeder
                     ],
                     [
                         'name' => 'localhost\'s key',
-                        'description' => 'The private key for the Coolify host machine (localhost).',
+                        'description' => 'The private key for the Oh2Bees host machine (localhost).',
                         'private_key' => $coolify_key,
                     ]
                 );
             } else {
-                echo "No SSH key found for the Coolify host machine (localhost).\n";
+                echo "No SSH key found for the Oh2Bees host machine (localhost).\n";
                 echo "Please generate one and save it in /data/coolify/ssh/keys/{$coolify_key_name}\n";
                 echo "Then try to install again.\n";
                 exit(1);
             }
-            // Add Coolify host (localhost) as Server if it doesn't exist
+            // Add Oh2Bees host (localhost) as Server if it doesn't exist
             if (Server::find(0) == null) {
                 $server_details = [
                     'id' => 0,
                     'name' => 'localhost',
-                    'description' => "This is the server where Coolify is running on. Don't delete this!",
+                    'description' => "This is the server where Oh2Bees is running on. Don't delete this!",
                     'user' => 'root',
                     'ip' => 'host.docker.internal',
                     'team_id' => 0,
@@ -147,7 +147,7 @@ uZx9iFkCELtxrh31QJ68AAAAEXNhaWxANzZmZjY2ZDJlMmRkAQIDBA==
                     'id' => 0,
                     'uuid' => 'coolify-testing-host',
                     'name' => 'localhost',
-                    'description' => "This is the server where Coolify is running on. Don't delete this!",
+                    'description' => "This is the server where Oh2Bees is running on. Don't delete this!",
                     'user' => 'root',
                     'ip' => 'coolify-testing-host',
                     'team_id' => 0,

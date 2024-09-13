@@ -1161,7 +1161,7 @@ function check_domain_usage(ServiceApplication|Application|null $resource = null
             }
             $naked_domain = str($domain)->value();
             if ($domains->contains($naked_domain)) {
-                throw new \RuntimeException("Domain $naked_domain is already in use by this Coolify instance.");
+                throw new \RuntimeException("Domain $naked_domain is already in use by this Oh2Bees instance.");
             }
         }
     }
@@ -1601,7 +1601,7 @@ function parseDockerComposeFile(Service|Application $resource, bool $isNew = fal
                 $savedService->save();
 
                 if (! $hasHostNetworkMode) {
-                    // Add Coolify specific networks
+                    // Add Oh2Bees specific networks
                     $definedNetworkExists = $topLevelNetworks->contains(function ($value, $_) use ($definedNetwork) {
                         return $value == $definedNetwork;
                     });
@@ -3207,7 +3207,7 @@ function newParser(Application|Service $resource, int $pull_request_id = 0, ?int
         // convert environment variables to one format
         $environment = convertComposeEnvironmentToArray($environment);
 
-        // Add Coolify defined environments
+        // Add Oh2Bees defined environments
         $allEnvironments = $resource->environment_variables()->get(['key', 'value']);
 
         $allEnvironments = $allEnvironments->mapWithKeys(function ($item) {

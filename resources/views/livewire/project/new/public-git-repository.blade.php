@@ -13,7 +13,7 @@
                 </div>
                 <div>
                     For example application deployments, checkout <a class="underline dark:text-white"
-                        href="https://github.com/coollabsio/coolify-examples/" target="_blank">Coolify
+                        href="https://github.com/coollabsio/coolify-examples/" target="_blank">Oh2Bees
                         Examples</a>.
                 </div>
                 @if ($branchFound)

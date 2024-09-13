@@ -128,7 +128,7 @@
                 <h3>Build</h3>
                 @if ($application->build_pack === 'dockerimage')
                     <x-forms.input
-                        helper="You can add custom docker run options that will be used when your container is started.<br>Note: Not all options are supported, as they could mess up Coolify's automation and could cause bad experience for users.<br><br>Check the <a class='underline dark:text-white' href='https://coolify.io/docs/knowledge-base/docker/custom-commands'>docs.</a>"
+                        helper="You can add custom docker run options that will be used when your container is started.<br>Note: Not all options are supported, as they could mess up Oh2Bees's automation and could cause bad experience for users.<br><br>Check the <a class='underline dark:text-white' href='https://coolify.io/docs/knowledge-base/docker/custom-commands'>docs.</a>"
                         placeholder="--cap-add SYS_ADMIN --device=/dev/fuse --security-opt apparmor:unconfined --ulimit nofile=1024:1024 --tmpfs /run:rw,noexec,nosuid,size=65536k"
                         id="application.custom_docker_run_options" label="Custom Docker Options" />
                 @else
@@ -222,7 +222,7 @@
                                 </div>
                             @endif
                             <x-forms.input
-                                helper="You can add custom docker run options that will be used when your container is started.<br>Note: Not all options are supported, as they could mess up Coolify's automation and could cause bad experience for users.<br><br>Check the <a class='underline dark:text-white' href='https://coolify.io/docs/knowledge-base/docker/custom-commands'>docs.</a>"
+                                helper="You can add custom docker run options that will be used when your container is started.<br>Note: Not all options are supported, as they could mess up Oh2Bees's automation and could cause bad experience for users.<br><br>Check the <a class='underline dark:text-white' href='https://coolify.io/docs/knowledge-base/docker/custom-commands'>docs.</a>"
                                 placeholder="--cap-add SYS_ADMIN --device=/dev/fuse --security-opt apparmor:unconfined --ulimit nofile=1024:1024 --tmpfs /run:rw,noexec,nosuid,size=65536k"
                                 id="application.custom_docker_run_options" label="Custom Docker Options" />
 
@@ -268,7 +268,7 @@
                         helper="By default, $ (and other chars) is escaped. So if you write $ in the labels, it will be saved as $$.<br><br>If you want to use env variables inside the labels, turn this off."
                         id="application.settings.is_container_label_escape_enabled" instantSave></x-forms.checkbox>
                     <x-forms.checkbox label="Readonly labels"
-                        helper="If you know what are you doing, you can enable this to edit the labels directly. Coolify won't update labels automatically. <br><br>Be careful, it could break the proxy configuration after you restart the container."
+                        helper="If you know what are you doing, you can enable this to edit the labels directly. Oh2Bees won't update labels automatically. <br><br>Be careful, it could break the proxy configuration after you restart the container."
                         id="application.settings.is_container_label_readonly_enabled" instantSave></x-forms.checkbox>
                 </div>
             @endif
@@ -299,12 +299,12 @@
                         helper="By default, $ (and other chars) is escaped. So if you write $ in the labels, it will be saved as $$.<br><br>If you want to use env variables inside the labels, turn this off."
                         id="application.settings.is_container_label_escape_enabled" instantSave></x-forms.checkbox>
                     <x-forms.checkbox label="Readonly labels"
-                        helper="If you know what are you doing, you can enable this to edit the labels directly. Coolify won't update labels automatically. <br><br>Be careful, it could break the proxy configuration after you restart the container."
+                        helper="If you know what are you doing, you can enable this to edit the labels directly. Oh2Bees won't update labels automatically. <br><br>Be careful, it could break the proxy configuration after you restart the container."
                         id="application.settings.is_container_label_readonly_enabled" instantSave></x-forms.checkbox>
                 </div>
                 <x-modal-confirmation buttonFullWidth action="resetDefaultLabels"
-                    buttonTitle="Reset to Coolify Generated Labels">
-                    Are you sure you want to reset the labels to Coolify generated labels? <br>It could break the proxy
+                    buttonTitle="Reset to Oh2Bees Generated Labels">
+                    Are you sure you want to reset the labels to Oh2Bees generated labels? <br>It could break the proxy
                     configuration after you restart the container.
                 </x-modal-confirmation>
 

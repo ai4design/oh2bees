@@ -49,7 +49,7 @@ class NotifyDemo extends Command
             <<<'HTML'
         <div>
             <div class="title-box">
-                Coolify
+                Oh2Bees
             </div>
             <p class="mt-1 ml-1 ">
               Demo Notify <strong class="text-coolify">=></strong> Send a demo notification to a given channel.

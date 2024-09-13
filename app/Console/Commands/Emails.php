@@ -228,7 +228,7 @@ class Emails extends Command
                 $this->mail->view('emails.waitlist-invitation', [
                     'loginLink' => 'https://coolify.io',
                 ]);
-                $this->mail->subject('Congratulations! You are invited to join Coolify Cloud.');
+                $this->mail->subject('Congratulations! You are invited to join Oh2Bees Cloud.');
                 $this->sendEmail();
                 break;
             case 'waitlist-confirmation':

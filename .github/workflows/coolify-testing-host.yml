@@ -1,4 +1,4 @@
-name: Coolify Testing Host (v4-non-prod)
+name: Oh2Bees Testing Host (v4-non-prod)
 
 on:
   push:

@@ -48,7 +48,7 @@
 }">
     <div class="flex pt-6 pb-4 pl-3">
         <div class="flex flex-col w-full">
-            <div class="text-2xl font-bold tracking-wide dark:text-white">Coolify</div>
+            <div class="text-2xl font-bold tracking-wide dark:text-white">Oh2Bees</div>
             <x-version />
         </div>
         <div class="pt-1">
@@ -337,7 +337,7 @@
                         </a>
                     </li>
                     <li>
-                        <a title="Sponsor us" class="menu-item" href="https://coolify.io/sponsorships"
+                        <a title="AWS Partner" class="menu-item" href="https://https://aws.amazon.com/pt/partners/"
                             target="_blank">
                             <svg class="text-pink-500 icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <g fill="none" stroke="currentColor" stroke-linecap="round"
@@ -347,7 +347,7 @@
                                         d="M12 6L8.707 9.293a1 1 0 0 0 0 1.414l.543.543c.69.69 1.81.69 2.5 0l1-1a3.182 3.182 0 0 1 4.5 0l2.25 2.25m-7 3l2 2M15 13l2 2" />
                                 </g>
                             </svg>
-                            Sponsor us
+                            AWS Partner
                         </a>
                     </li>
                 @endif

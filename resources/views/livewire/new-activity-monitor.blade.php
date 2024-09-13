@@ -1,4 +1,4 @@
-@php use App\Actions\CoolifyTask\RunRemoteProcess; @endphp
+@php use App\Actions\Oh2BeesTask\RunRemoteProcess; @endphp
 <div>
     @if ($this->activity)
         @if (isset($header))

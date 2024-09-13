@@ -74,13 +74,13 @@ if [ "$1" != "" ]; then
 fi
 
 echo -e "-------------"
-echo -e "Welcome to Coolify v4 beta installer!"
+echo -e "Welcome to Oh2Bees v4 beta installer!"
 echo -e "This script will install everything for you."
 echo -e "Source code: https://github.com/coollabsio/coolify/blob/main/scripts/install.sh\n"
 echo -e "-------------"
 
 echo "OS: $OS_TYPE $OS_VERSION"
-echo "Coolify version: $LATEST_VERSION"
+echo "Oh2Bees version: $LATEST_VERSION"
 echo "Helper version: $LATEST_HELPER_VERSION"
 
 echo -e "-------------"
@@ -141,7 +141,7 @@ fi
 if [ "$SSH_DETECTED" = "false" ]; then
     echo "###############################################################################"
     echo "WARNING: Could not detect if OpenSSH server is installed and running - this does not mean that it is not installed, just that we could not detect it."
-    echo -e "Please make sure it is set, otherwise Coolify cannot connect to the host system. \n"
+    echo -e "Please make sure it is set, otherwise Oh2Bees cannot connect to the host system. \n"
     echo "###############################################################################"
 fi
 
@@ -157,7 +157,7 @@ if [ "$SSH_PERMIT_ROOT_LOGIN" != "true" ]; then
     echo "###############################################################################"
     echo "WARNING: PermitRootLogin is not enabled in /etc/ssh/sshd_config."
     echo -e "It is set to $SSH_PERMIT_ROOT_LOGIN_CONFIG. Should be prohibit-password, yes or without-password.\n"
-    echo -e "Please make sure it is set, otherwise Coolify cannot connect to the host system. \n"
+    echo -e "Please make sure it is set, otherwise Oh2Bees cannot connect to the host system. \n"
     echo "###############################################################################"
 fi
 
@@ -165,7 +165,7 @@ fi
 if [ -x "$(command -v snap)" ]; then
     if snap list | grep -q docker; then
         echo "Docker is installed via snap."
-        echo "Please note that Coolify does not support Docker installed via snap."
+        echo "Please note that Oh2Bees does not support Docker installed via snap."
         echo "Please remove Docker with snap (snap remove docker) and reexecute this script."
         exit 1
     fi
@@ -351,8 +351,8 @@ fi
 
 bash /data/coolify/source/upgrade.sh "${LATEST_VERSION:-latest}" "${LATEST_HELPER_VERSION:-latest}"
 
-echo "Waiting for 20 seconds for Coolify to be ready..."
+echo "Waiting for 20 seconds for Oh2Bees to be ready..."
 
 sleep 20
 echo "Please visit http://$(curl -4s https://ifconfig.io):8000 to get started."
-echo -e "\nCongratulations! Your Coolify instance is ready to use.\n"
+echo -e "\nCongratulations! Your Oh2Bees instance is ready to use.\n"

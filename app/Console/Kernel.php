@@ -11,7 +11,7 @@ use App\Jobs\PullSentinelImageJob;
 use App\Jobs\PullTemplatesFromCDN;
 use App\Jobs\ScheduledTaskJob;
 use App\Jobs\ServerCheckJob;
-use App\Jobs\UpdateCoolifyJob;
+use App\Jobs\UpdateOh2BeesJob;
 use App\Models\InstanceSettings;
 use App\Models\ScheduledDatabaseBackup;
 use App\Models\ScheduledTask;
@@ -92,7 +92,7 @@ class Kernel extends ConsoleKernel
 
         if ($settings->is_auto_update_enabled) {
             $autoUpdateFrequency = $settings->auto_update_frequency;
-            $schedule->job(new UpdateCoolifyJob)
+            $schedule->job(new UpdateOh2BeesJob)
                 ->cron($autoUpdateFrequency)
                 ->timezone($settings->instance_timezone)
                 ->onOneServer();

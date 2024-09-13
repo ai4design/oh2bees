@@ -1,6 +1,6 @@
 <div>
     <x-slot:title>
-        Tag | Coolify
+        Tag | Oh2Bees
     </x-slot>
     <div class="flex items-start gap-2">
         <div>

@@ -1,7 +1,7 @@
 <div x-data="{
     popups: {
-        sponsorship: true,
-        notification: true,
+        sponsorship: false,
+        notification: false,
         realtime: false,
     },
     init() {
@@ -18,7 +18,7 @@
                     if (checkNumber > 5) {
                         this.popups.realtime = true;
                         console.error(
-                            'Coolify could not connect to its real-time service. This will cause unusual problems on the UI if not fixed! Please check the related documentation (https://coolify.io/docs/knowledge-base/cloudflare/tunnels) or get help on Discord (https://coollabs.io/discord).)'
+                            'Oh2Bees could not connect to its real-time service. This will cause unusual problems on the UI if not fixed! Please check the related documentation (https://coolify.io/docs/knowledge-base/cloudflare/tunnels) or get help on Discord (https://coollabs.io/discord).)'
                         );
                         clearInterval(checkPusherInterval);
                     }
@@ -35,7 +35,7 @@
                         <span class="font-bold text-left text-red-500">WARNING: </span>Realtime Error?!
                     </x-slot:title>
                     <x-slot:description>
-                        <span>Coolify could not connect to its real-time service.<br>This will cause unusual problems on the
+                        <span>Oh2Bees could not connect to its real-time service.<br>This will cause unusual problems on the
                             UI
                             if
                             not fixed! <br><br>
@@ -58,7 +58,7 @@
     <span x-show="popups.sponsorship">
         <x-popup>
             <x-slot:title>
-                Love Coolify as we do?
+                Love Oh2Bees as we do?
             </x-slot:title>
             <x-slot:icon>
                 <img src="https://cdn-icons-png.flaticon.com/512/8236/8236748.png"

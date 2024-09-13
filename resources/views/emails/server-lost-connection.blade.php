@@ -1,5 +1,5 @@
 <x-emails.layout>
-Coolify cannot connect to your server ({{ $name }}). Please check your server and make sure it is running.
+Oh2Bees cannot connect to your server ({{ $name }}). Please check your server and make sure it is running.
 
 All automations & integrations are turned off!
 

@@ -1936,7 +1936,7 @@ class ApplicationDeploymentJob implements ShouldBeEncrypted, ShouldQueue
 
     private function build_image()
     {
-        // Add Coolify related variables to the build args
+        // Add Oh2Bees related variables to the build args
         $this->environment_variables->filter(function ($key, $value) {
             return str($key)->startsWith('COOLIFY_');
         })->each(function ($key, $value) {
@@ -2183,7 +2183,7 @@ COPY ./nginx.conf /etc/nginx/conf.d/default.conf");
         } else {
             if ($this->application->dockerfile || $this->application->build_pack === 'dockerfile' || $this->application->build_pack === 'dockerimage') {
                 $this->application_deployment_queue->addLogEntry('----------------------------------------');
-                $this->application_deployment_queue->addLogEntry("WARNING: Dockerfile or Docker Image based deployment detected. The healthcheck needs a curl or wget command to check the health of the application. Please make sure that it is available in the image or turn off healthcheck on Coolify's UI.");
+                $this->application_deployment_queue->addLogEntry("WARNING: Dockerfile or Docker Image based deployment detected. The healthcheck needs a curl or wget command to check the health of the application. Please make sure that it is available in the image or turn off healthcheck on Oh2Bees's UI.");
                 $this->application_deployment_queue->addLogEntry('----------------------------------------');
             }
             $this->application_deployment_queue->addLogEntry('New container is not healthy, rolling back to the old container.');

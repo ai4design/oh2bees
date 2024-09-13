@@ -1,6 +1,6 @@
 <div>
     <x-slot:title>
-        Settings | Coolify
+        Settings | Oh2Bees
     </x-slot>
     <x-settings.navbar />
     <div class="flex items-center gap-2">

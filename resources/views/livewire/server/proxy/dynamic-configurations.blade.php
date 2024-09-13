@@ -1,6 +1,6 @@
 <div>
     <x-slot:title>
-        Proxy Dynamic Configuration | Coolify
+        Proxy Dynamic Configuration | Oh2Bees
     </x-slot>
     <x-server.navbar :server="$server" :parameters="$parameters" />
     <div class="flex gap-2">

@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 use Spatie\LaravelData\Data;
 
 /**
- * The parameters to execute a CoolifyTask, organized in a DTO.
+ * The parameters to execute a Oh2BeesTask, organized in a DTO.
  */
-class CoolifyTaskArgs extends Data
+class Oh2BeesTaskArgs extends Data
 {
     public function __construct(
         public string $server_uuid,

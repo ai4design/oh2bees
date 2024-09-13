@@ -6,7 +6,7 @@ use App\Models\InstanceSettings;
 use App\Models\Server;
 use Lorisleiva\Actions\Concerns\AsAction;
 
-class UpdateCoolify
+class UpdateOh2Bees
 {
     use AsAction;
 

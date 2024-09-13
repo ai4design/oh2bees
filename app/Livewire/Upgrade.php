@@ -2,7 +2,7 @@
 
 namespace App\Livewire;
 
-use App\Actions\Server\UpdateCoolify;
+use App\Actions\Server\UpdateOh2Bees;
 use App\Models\InstanceSettings;
 use Livewire\Component;
 
@@ -37,7 +37,7 @@ class Upgrade extends Component
                 return;
             }
             $this->updateInProgress = true;
-            UpdateCoolify::run(manual_update: true);
+            UpdateOh2Bees::run(manual_update: true);
         } catch (\Throwable $e) {
             return handleError($e, $this);
         }

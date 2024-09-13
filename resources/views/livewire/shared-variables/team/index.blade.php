@@ -1,6 +1,6 @@
 <div>
     <x-slot:title>
-        Team Variables | Coolify
+        Team Variables | Oh2Bees
     </x-slot>
     <div class="flex gap-2">
         <h1>Team Shared Variables</h1>
