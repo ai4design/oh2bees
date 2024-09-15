@@ -9,8 +9,8 @@ on:
       - templates/service-templates.json
 
 env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: "coollabsio/coolify"
+  # REGISTRY: ghcr.io
+  IMAGE_NAME: "mbergo/platform-engineering"
 
 jobs:
   amd64:
@@ -20,8 +20,8 @@ jobs:
       - name: Login to ghcr.io
         uses: docker/login-action@v3
         with:
-          registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
+          # registry: ${{ env.REGISTRY }}
+          username: "mbergo"
           password: ${{ secrets.GITHUB_TOKEN  }}
       - name: Get Version
         id: version
